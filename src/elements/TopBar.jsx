@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { AiTwotoneLock } from 'react-icons/ai'
+import { BiSolidUser } from 'react-icons/bi'
 
 const TopBar = () => {
   return (
@@ -9,8 +11,8 @@ const TopBar = () => {
             <Link className='flex gap-[2px] text-[14px]'>Customer Assistance</Link>
         </div>
         <div className='flex gap-[10px]'>
-            <Link className='text-[15px] '>Sign In</Link>
-            <Link className='text-[15px] '>Sign Up</Link>
+            <Link className='text-[15px] flex items-center gap-[4px]'><AiTwotoneLock />Sign In</Link>
+            <Link className='text-[15px] flex items-center gap-[4px]'><BiSolidUser />Sign Up</Link>
         </div>
     </div>
   )
